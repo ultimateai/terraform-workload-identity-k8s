@@ -47,7 +47,7 @@ variable "automount_service_account_token" {}
 
 ```
 module "k8s_workload_identity" {
-  source                         = ""git@github.com:ultimateai/terraform-tfe-workspacer.git?ref=PLT-356"
+  source                         = "git@github.com:ultimateai/terraform-tfe-workspacer.git?ref=PLT-356"
   project_id                     = "my-gcp-project-name"
   service_account_name           = "my-gcp-service-account-name"
   service_account_display_name   = "Display Name of the GCP Service Account"
