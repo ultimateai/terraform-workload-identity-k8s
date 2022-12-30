@@ -20,6 +20,7 @@ I will create the following resoucres using the terrafrom.
 ├── Makefile
 ├── README.md
 ├── main.tf
+├── output.tf
 ├── version.tf
 ├── Terraform-docs.md
 └── variable.tf
