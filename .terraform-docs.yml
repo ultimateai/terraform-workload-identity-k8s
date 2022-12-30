@@ -1,6 +1,6 @@
 # Terraform docs configuration file
 formatter: markdown table
-header-from: doc.md
+header-from: Terraform-docs.md
 sort:
   enabled: true
 sections:
