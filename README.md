@@ -1,3 +1,5 @@
+[![terraform](https://img.shields.io/badge/terraform-%23623CE4?style=flat-square&logo=terraform&logoColor=white)](https://www.terraform.io/)
+[![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
 ### *WHO AM I ?*
 
 I am terrafrom module which will create the workload Identity Binding with k8s service account.
