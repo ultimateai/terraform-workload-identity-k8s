@@ -24,13 +24,19 @@ resource "google_service_account" "service_accounts" {
 }
 
 /*
- This will create the k8s service account.
+ This will create the k8s service account if it doesn't exist.
 */
+
+
 resource "kubernetes_service_account" "main" {
+  count                           = var.enable_kubernetes_service_account ? 1 : 0
   automount_service_account_token = var.automount_service_account_token
   metadata {
     name      = var.kubernetes_service_account
     namespace = var.namespace
+    annotations = {
+      "iam.gke.io/gcp-service-account" = google_service_account.service_accounts.email
+    }
   }
 }
 

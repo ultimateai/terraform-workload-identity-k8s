@@ -36,6 +36,7 @@ I take the following variables and there are some defaults if not specified will
 variable "project_id" {}
 variable "service_account_name" {}
 variable "service_account_display_name" {}
+variable "enable_kubernetes_service_account" {}
 variable "namespace" {}
 variable "kubernetes_service_account" {}
 variable "automount_service_account_token" {}

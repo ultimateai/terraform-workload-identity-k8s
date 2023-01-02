@@ -18,6 +18,12 @@ variable "namespace" {
   type        = string
 }
 
+variable "enable_kubernetes_service_account" {
+  description = "If true This will enable creation of service account from the module instead of using existing one"
+  type        = bool
+  default     = false
+}
+
 variable "kubernetes_service_account" {
   description = "The name of the k8s service account which will be mapped with the gcp service account for workload identity"
   type        = string
@@ -28,3 +34,4 @@ variable "automount_service_account_token" {
   type        = bool
   default     = false
 }
+
