@@ -9,7 +9,7 @@ on:
 
 env:
   REQUIRE_SCOPE: false
-  SUBJECT_PATTERN: ^(?![A-Z]).+$
+  SUBJECT_PATTERN: "^(?![A-Z]).+$"
   SUBJECT_PATTERN_ERROR: 'The subject "{subject}" found in the pull request title "{title}" did not match the configured pattern. Please ensure that the subject does not start with an uppercase character'
   ALLOWED_TYPES: |
           fix
