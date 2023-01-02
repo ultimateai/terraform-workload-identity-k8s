@@ -9,7 +9,7 @@ on:
 
 jobs:
   lint_pr_title:
-      uses: ultimateai/workflows/.github/workflows/lint-pr.yml@0.10.0
+      uses: ultimateai/workflows/.github/workflows/lint-pr.yml@0.13.0
       secrets: inherit
       with:
         subjectPattern: ([-a-zA-Z0-9]{2,5}[/-]{1}[0-9]+.*) # PR Title example: minor: PLT-239 description. This subject pattern enforces the existance of a Jira issue after the type_word. 
