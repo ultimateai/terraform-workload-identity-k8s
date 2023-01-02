@@ -183,3 +183,5 @@ You can configure the behavior in the `.terraform-docs.yml` [configuration file]
 You can use all the above makefile targets as precommit hooks. The only dependency is the [pre-commit](https://pre-commit.com/) tool. You can also install it so that it runs automatically on every git commit. The configuration file is [here](./.pre-commit-config.yaml).
 
 ## Terraform documentation
+
+Test CI/CD
